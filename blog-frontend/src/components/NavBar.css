@@ -1,0 +1,42 @@
+:root {
+    --primary-color: linear-gradient(135deg, #007bff, #00d2ff);
+    --secondary-color: linear-gradient(135deg, #ffdd57, #ff6b6b);
+    --background-color: linear-gradient(135deg, #eef1f5, #d0e6f3);
+    --text-color: #333;
+    --card-background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-background: linear-gradient(135deg, #007bff, #00d2ff);
+    --button-hover: linear-gradient(135deg, #0056b3, #0099ff);
+  }
+  
+.navbar {
+    background: var(--primary-color); /* Gradient can be applied here if needed */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.3s, transform 0.3s, background 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+  }
+  
